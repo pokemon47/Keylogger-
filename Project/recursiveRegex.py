@@ -13,8 +13,6 @@ def searchFile(filename):
         lineCounter = 1
         for line in file:
             finds = re.findall(passwordPattern, line)
-            # if (finds):
-            #     print(finds)
             for find in finds:
                 print(f"{find.strip()} | LINE {lineCounter} | PATH {filename}")
             lineCounter += 1

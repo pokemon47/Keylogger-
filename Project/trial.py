@@ -43,7 +43,6 @@ keyboard = Controller()
 import datetime
 def timeStamp():
     dt = datetime.datetime.now()
-    # formatted_timestamp = dt.strftime("%Y-%m-%d %H:%M:%S")
     formatted_timestamp = dt.strftime("%Y-%m-%d-%Hh")
     return (formatted_timestamp)
 
@@ -74,43 +73,3 @@ def stringToKeys(value):
     for val in keys[1:]:
         print(val, end="")
 stringToKeys("code ")
-# data = """
-# Task Switching
-
-# ● trial.py - Desktop - Visual Studio Code
-# Visual Studio Code
-# ● trial.py - Desktop - Visual Studio Code
-# server.py - Desktop - Visual Studio Code
-
-# Task Switching
-
-# trial.py - Project - Visual Studio Code
-
-# Task Switching
-
-# server.py - Desktop - Visual Studio Code
-
-
-# how to get timestamp formatted in python - Brave Search - Brave
-
-# Task Switching
-
-# trial.py - Project - Visual Studio Code
-
-# Task Switching
-
-# how to get timestamp formatted in python - Brave Search - Brave
-
-# Task Switching
-
-# trial.py - Project - Visual Studio Code
-
-# Task Switching
-
-# how to get timestamp formatted in python - Brave Search - Brave
-# Deployment Guide Free Methods - SENG2021 - YouTube - Brave
-# Python REST API Tutorial for Beginners | How to Build a Flask REST API - YouTube - Brave
-
-# trial.py - Project - Visual Studio Code"""
-
-# stringToKeys(data)

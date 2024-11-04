@@ -11,12 +11,10 @@ def main():
 
 def recordPress(key):
     global f
-    # f.write(f"pressed {int(time.time())} {key}\n")
     f.write(f"pressed {key}\n")
     f.flush()
 def recordRelease(key):
     global f
-    # f.write(f"released {int(time.time())} {key}\n")
     f.write(f"released {key}\n")
     f.flush()
 

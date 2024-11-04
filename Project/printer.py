@@ -11,17 +11,10 @@ def main():
 
 def recordPress(key):
     global f
-    # f.write(f"pressed {int(time.time())} {key}\n")
-    
     if str(key) == r"'\x16'":
         print("PASTED HEREE")
-    # print(str(key))
-    # print(r"'\x16'")
     print(f"pressed {key}")
 def recordRelease(key):
     global f
-    # f.write(f"released {int(time.time())} {key}\n")
-    # print(f"released {key}")
-
 if __name__=="__main__":
     main()

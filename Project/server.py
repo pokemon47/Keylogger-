@@ -20,7 +20,6 @@ def writeClipData():
     dataValue = request.json["data"]
     with open('LogClip.txt', 'a') as f:
         for line in dataValue:
-            # if line == "": continue
             f.write(line)
     return f"Wrote to the clip log file"
 

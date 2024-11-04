@@ -51,7 +51,6 @@ def multiKeyPress(keys):
 def main():
     filename = fileCleaner()
     fileReader = open(filename, 'r')
-    # fileReader = open(sys.argv[1], 'r')
 
     keyboard = Controller()
     global stringToKey
@@ -68,10 +67,6 @@ def main():
             key = key[:-1]
         elif key in stringToKey:
             key = stringToKey[key]
-        # elif state != "pressed" and state != "released":
-        #     # so the focus changes here
-
-        #     print("hi")
         else:
             continue
         if (state == "pressed"):
@@ -82,49 +77,6 @@ def main():
             copy = pressedKeys.copy()
             pressedKeys = [i for i in copy if i != key] 
     print(pressedKeys, end="")
-
-# def fileCleaner():
-#     src = open(sys.argv[1], 'r')
-#     dest = open(f"_TEMP_{sys.argv[1]}", 'w')
-
-#     no = [
-#         "pressed Key.alt_l\n",
-#         "pressed Key.tab\n",
-#         "released Key.tab\n",
-#         "released Key.alt_l\n",
-#         "released Key.ctrl_l\n",
-#         "pressed Key.ctrl_l\n"
-#         ]
-
-#     prevFocus = None
-#     buffer = []
-#     for line in src:
-#         diff = line.split()[0]
-#         if (diff == "pressed" or diff == "released") and line.split()[1][0] == "'" and len(line.split()[1]) > 3:
-#             continue
-#         elif (diff == "pressed" or diff == "released") and buffer == []:
-#             dest.write(line)
-#         elif (diff == "pressed" or diff == "released") and (buffer != []) and (line not in no):
-#             for bufferLine in buffer:
-#                 dest.write(bufferLine)
-#             buffer = []
-#             dest.write(line)
-#             # print(buffer)
-#         elif (diff == "pressed" or diff == "released") and (buffer != []) and (line in no):
-#             buffer.append(line)
-#         else:
-#             buffer = [line]
-#             # print(buffer)
-#     # for line in src:
-#     #     diff = line.split()[0]
-#     #     if (diff == "pressed" or diff == "released") and prevFocus == None:
-#     #         dest.write(line)
-#     #     elif (diff == "pressed" or diff == "released") and prevFocus != None:
-#     #         dest.write(prevFocus)
-#     #         prevFocus = None
-#     #         dest.write(line)
-#     #     else:
-#     #         prevFocus = line
 
 def stringToKeys(value):
     keys = []
@@ -139,7 +91,6 @@ def stringToKeys(value):
             keys.append(f"pressed '{character}'\n")
             keys.append(f"released '{character}'\n")
     return keys
-# def validFilenameChars(filename):
 
 def fileCleaner():
     src = open(sys.argv[1], 'r')
@@ -271,7 +222,6 @@ def fileCleaner():
             filename = "'" + sanitize_filename(buffer[0]) + "'"
             toWrite = before + stringToKeys(filename) + after + buffer[1:]
             toWrite = before + stringToKeys(filename) + after + buffer[1:]
-            # print(stringToKeys(filename))
             for lineToWrite in toWrite:
                 dest.write(lineToWrite)
             buffer = []
@@ -285,6 +235,4 @@ def fileCleaner():
     src.close()
     dest.close()
     return f"_TEMP_{sys.argv[1]}"
-    
 main()
-# fileCleaner()

@@ -12,12 +12,6 @@ def safeDirContructor(pathArray):
         if not (os.path.exists(pathCon) and os.path.isdir(pathCon)):
             os.mkdir(pathCon)
 
-# def isEmptyFile(filePath):
-#     with open(filePath, 'r') as file:
-#         for line in file:
-#             if (re.search(r'\S', line)):
-#                 return False
-#     return True
         
 def fileMaker(filename, content):
     srcDir = sys.argv[1] + "\\"
@@ -26,10 +20,3 @@ def fileMaker(filename, content):
     safeDirContructor(root)
 
     srcFile = open(sys.argv[1], 'r')
-
-
-
-    # for filename in files:
-    #     dirNames = root + ["".join(s + '\\') for s in filename.split()[0].split("-")]
-    #     safeDirContructor(dirNames)
-    #     newFilename = '-'.join(reversed((''.join(filename.split()[2:])).split('-'))) + "_.txt"

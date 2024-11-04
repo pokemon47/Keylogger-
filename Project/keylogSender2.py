@@ -39,7 +39,6 @@ def clipSender():
         tmp_value = pyperclip.paste()
         if tmp_value != prevValue:
             prevValue = tmp_value
-            # print("Value changed: %s" % str(prevValue)[:20])
             postReq = requests.post("http://127.0.0.1:5000/writeClip", json={"data": str(prevValue)})  
         time.sleep(0.1)
 

@@ -53,7 +53,6 @@ def timeStamp():
     return (formatted_timestamp)
 
 def focusCapture ():
-    # print(GetWindowText(GetForegroundWindow()))
     global dataVal
     dataVal.append(f"{timeStamp()} - {GetWindowText(GetForegroundWindow())}\n")
     curWindow = GetWindowText(GetForegroundWindow())
