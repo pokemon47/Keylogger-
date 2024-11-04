@@ -1,0 +1,4 @@
+buffer = []BUFFER ++BUFFER{} AND (line not in no)
+for bufferLine in buffer:
+dest.wr
+(bufferLine)bu =ython filec = []

