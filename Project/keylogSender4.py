@@ -43,7 +43,7 @@ def keySender():
             dataVal = dataVal[len(dataCopy):]
             filteredData = []
             for line in dataCopy:
-                data = line.copy()
+                data = line + ""
                 line = line.strip()
                 if (line.split()[0] == "pressed" or line.split()[0] == "released") and (line.split()[1][0] == "'") and (len(line.split()[1]) > 3):
                     continue

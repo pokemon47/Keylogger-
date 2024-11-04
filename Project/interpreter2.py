@@ -59,9 +59,13 @@ def main():
     pressedKeys = []
     for line in fileReader:
         print(line, end="")
-        time.sleep(0.025)
+        time.sleep(0.03)
         state = line.split()[0]
+        if state == "WAIT":
+            time.sleep(0.5)
+            continue
         key = line.split()[1]
+
         if key[0] == "'" and len(key) == 3:
             key = key[1:]
             key = key[:-1]
@@ -195,6 +199,7 @@ def fileCleaner():
     after = [
         "pressed Key.enter\n",
         "released Key.enter\n",
+        "WAIT\n",
         "pressed Key.ctrl_l\n",
         "pressed 's'\n"
         "released 's'\n"
